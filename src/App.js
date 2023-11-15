@@ -11,14 +11,14 @@ function App() {
       <div className='bg-slate-100 pt-6 pb-16 px-2'>
         <Header userName="Amanda Bynes" />
 
-        <div className="container my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="container my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
           <AppointmentCard title="Upcoming Appointment" time="3:00pm 23/3/23" buttonText="View" />
           <AppointmentCard title="Previous Appointment" time="3:00pm 23/3/23" buttonText="View" />
           <AppointmentCard title="Current Prescription" time="3:00pm 23/3/23" buttonText="View" />
         </div>
 
         <h2 className="text-2xl font-bold my-4">Available Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 p-10">
           <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
           <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
           <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
@@ -34,7 +34,7 @@ function App() {
         </div>
 
         <h2 className="text-2xl font-bold my-4">Health Practitioners</h2>
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-10">
           <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
           <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
           <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
