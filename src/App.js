@@ -1,57 +1,61 @@
 import './Tail.css';
 import './index.css';
 import Navbar from './Component/Navbar';
+import RigistrationForm from './Component/Rigistration';
 import serviceImage from './image/pexels-antoni-shkraba.png';
 import profileImage from './image/profile.png';
 
 function App() {
   return (
-    <div className="flex bg-grey-400 mx-auto">
-      <Navbar/>
-      <div className='bg-slate-100 pt-6 pb-16 px-2'>
-        <Header userName="Amanda Bynes" />
-
-        <div className="container my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
-          <AppointmentCard title="Upcoming Appointment" time="3:00pm 23/3/23" buttonText="View" />
-          <AppointmentCard title="Previous Appointment" time="3:00pm 23/3/23" buttonText="View" />
-          <AppointmentCard title="Current Prescription" time="3:00pm 23/3/23" buttonText="View" />
-        </div>
-
-        <h2 className="text-2xl font-bold my-4">Available Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 p-10">
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
-          {/* ... other services */}
-        </div>
-
-        <h2 className="text-2xl font-bold my-4">Health Practitioners</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-10">
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
-          {/* ... other practitioners */}
-        </div>
-      </div>
+    <div className=''>
+      <RigistrationForm/>
     </div>
+    // <div className="flex bg-grey-400 mx-auto">
+    //   <Navbar/>
+    //   <div className='bg-slate-100 pt-6 pb-16 px-2'>
+    //     <Header userName="Amanda Bynes" />
+
+    //     <div className="container my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  gap-4">
+    //       <AppointmentCard title="Upcoming Appointment" time="3:00pm 23/3/23" buttonText="View" />
+    //       <AppointmentCard title="Previous Appointment" time="3:00pm 23/3/23" buttonText="View" />
+    //       <AppointmentCard title="Current Prescription" time="3:00pm 23/3/23" buttonText="View" />
+    //     </div>
+
+    //     <h2 className="text-2xl font-bold my-4">Available Services</h2>
+    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 p-10">
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       <ServiceCard title="Acupuncture" description="Galant" imageUrl={serviceImage}/>
+    //       {/* ... other services */}
+    //     </div>
+
+    //     <h2 className="text-2xl font-bold my-4">Health Practitioners</h2>
+    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-10">
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       <PractitionerCard name="Greg Smith" specialty="Acupuncture" imageUrl={profileImage} />
+    //       {/* ... other practitioners */}
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

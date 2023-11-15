@@ -14,3 +14,14 @@
   font-style: normal;
   font-weight: 600;
 }
+body{
+  background-color: lightgray;
+}
+
+/* DatePickerCustomStyles.css */
+
+/* Adjust the header styles */
+.react-datepicker__header {
+  background-color: white; /* Change as per the second image */
+  border-bottom: none;
+}
